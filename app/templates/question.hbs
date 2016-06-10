@@ -1,1 +1,12 @@
-{{outlet}}
+<hr>
+<h4>{{model.ask}} Details</h4>
+
+{{answer-tile answers=model.answers}}
+{{new-answer question=model}}
+
+<ul>
+  {{#each model as |question|}}
+     <li>{{#link-to 'question' question.id}}{{question.ask}}{{question.author}}{{/link-to}}
+     </li>
+  {{/each}}
+</ul>

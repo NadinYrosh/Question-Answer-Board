@@ -3,13 +3,17 @@
 
   <h4>We hope you find exactly what you're looking for.</h4>
   <h2>Questions</h2>
+
   {{new-question saveQuestion="saveQuestionOnQuestionRoute"}}
+  
   <ul>
     {{#each model as |question|}}
-       <li>{{question.ask}} {{question.author}} {{question.note}}</li>
+      <li>{{#link-to 'question' question.id}}{{question.ask}}{{/link-to}}</li>
     {{/each}}
   </ul>
 
+
+  <hr>
   <button type="button" class="btn btn-secondary">{{#link-to 'contact'}}Contact{{/link-to}}</button>
 
   <button type="button" class="btn btn-secondary">{{#link-to 'about'}}About{{/link-to}}</button>
