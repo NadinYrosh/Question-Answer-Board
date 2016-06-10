@@ -5,11 +5,11 @@ module.exports = function(environment) {
     modulePrefix: 'question-board',
     environment: environment,
     firebase: {
-    apiKey: 'AIzaSyAuHx8kJp1aytGq1QEL2g2udGJpQMxyCrI',
-    authDomain: 'question-board-ba3ef.firebaseapp.com',
-    databaseURL: 'https://question-board-ba3ef.firebaseio.com',
-    storageBucket: 'question-board-ba3ef.appspot.co',
-  },
+      apiKey: "AIzaSyAuHx8kJp1aytGq1QEL2g2udGJpQMxyCrI",
+      authDomain: "question-board-ba3ef.firebaseapp.com",
+      databaseURL: "https://question-board-ba3ef.firebaseio.com",
+      storageBucket: "question-board-ba3ef.appspot.com",
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

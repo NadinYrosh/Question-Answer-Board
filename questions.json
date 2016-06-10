@@ -1,0 +1,24 @@
+{ "questions": [{
+    "ask": "What is CRUD?",
+    "author": "N.Y.",
+    "note": "Programming subject"
+  }, {
+    "ask": "What animal is the most beautiful?",
+    "author": "N.Y.",
+    "note": "Animals."
+  }, {
+    "ask": "Who is the smartest person in the world",
+    "author": "N.Y.",
+    "note": "Learn new things."
+  }],
+  "answers": [{
+      "answer": "In computer programming, create, read, update and delete",
+      "author": "N.Y."
+    }, {
+      "answer": "By www.Ranker.com information it's :Siberian Tiger",
+      "author": "N.Y."
+    }, {
+      "answer": "Robert Novelly stated that Langan's IQ – said to be between 195 and 210 – was the highest he'd ever measured. Langan has been dubbed “the smartest man in America.",
+      "author": "San Francisco"
+  }]
+}
