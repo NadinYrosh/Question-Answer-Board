@@ -1,5 +1,26 @@
-<div class="container">
-  <h1 id="title">Question Board</h1>
-</div>
+<header>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Question Board</h1>
+    </div>
+  </div>
 
-{{outlet}}
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+  {{outlet}}
+<div class="footer">© 'Question Board' by Nadiya Yeroshkina 2016</div>
+
+
+<!-- <button type="button" class="btn btn-secondary">{{#link-to 'contact'}}Contact{{/link-to}}</button>
+
+<button type="button" class="btn btn-secondary">{{#link-to 'about'}}About{{/link-to}}</button> -->
