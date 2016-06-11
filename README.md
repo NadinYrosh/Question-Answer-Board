@@ -1,5 +1,7 @@
 # Question-board
-#### Web app for a searching answers for some interesting questions.| May 27, 2016
+#### Web app for a searching answers for some interesting questions.| June 10, 2016
+
+#### By Nadiya Yeroshkina
 
 ## Prerequisites
 
