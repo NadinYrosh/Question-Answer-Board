@@ -1,7 +1,5 @@
 # Question-board
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### Web app for a searching answers for some interesting questions.| May 27, 2016
 
 ## Prerequisites
 
@@ -19,35 +17,19 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
+* `ember s`
+* `open http://localhost:4200/`
 
-## Running / Development
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+## Support and contact details
 
-### Code Generators
+_Questions or comments can be directed to the developer_
 
-Make use of the many generators for code, try `ember help generate` for more details
+_Ember, HTML, CSS, Bootstrap, JavaScript, JQuery, ._
 
-### Running Tests
+### License
 
-* `ember test`
-* `ember test --server`
+**This project is licensed under the [MIT license](https://opensource.org/licenses/MIT).**
 
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+Copyright (c) 2016 Yeroshkina N.
 
