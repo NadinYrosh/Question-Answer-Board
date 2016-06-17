@@ -1,9 +1,17 @@
 <div class="container">
   <hr>
   <h2>Answers: </h2>
-  {{#each answers as |answer|}}
-    <h4>"{{answer.answer}}" -by {{answer.author}} </h4>
-    <button {{action 'delete' answer}}>Delete</button>
+  <div class="row">
 
-  {{/each}}
+    {{#each sortedAnswers as |answer|}}
+    <div class="col-xs-4">
+      <h4>"{{answer.answer}}" -by {{answer.author}} </h4>
+    </div>
+
+    <div class="col-xs-8">
+      <button class="btn btn-xs btn-danger"{{action 'delete' answer}}>Delete</button>
+    </div>
+    {{/each}}
+
+  </div>
 </div>

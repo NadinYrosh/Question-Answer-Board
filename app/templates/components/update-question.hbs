@@ -1,4 +1,3 @@
-
 {{#if updateQuestionForm}}
   <h2>Update {{question.ask}} written by {{question.author}}.</h2>
     <div>
@@ -22,4 +21,5 @@
       </form>
     </div>
   {{else}}
+  <button class="btn btn-info btn-sm" {{action 'updateQuestionForm'}}>Update question</button>
 {{/if}}

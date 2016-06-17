@@ -4,6 +4,7 @@ export default Ember.Component.extend({
   updateQuestionForm: false,
   actions: {
     updateQuestionForm() {
+      console.log("tip!");
       this.set('updateQuestionForm', true);
     },
     update(question) {
