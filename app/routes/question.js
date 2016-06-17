@@ -21,10 +21,13 @@ export default Ember.Route.extend({
       newAnswer.save().then(function(){
         return question.save();
       });
+    },
+    destroyQuestion(question) {
+      question.destroyRecord();
+      this.transitionTo('index');
+    },
+    destroyAnswer(answer) {
+      answer.destroyRecord();
     }
   }
 });
-    // destroyRental(rental) {
-    //   rental.destroyRecord();
-    //   this.transitionTo('index');
-    // }

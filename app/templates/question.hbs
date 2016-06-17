@@ -1,14 +1,17 @@
 <div class="container">
 
   <h3>"{{model.ask}}" written by {{model.author}}</h3>
-  {{answer-tile answers=model.answers}}
-  {{new-answer saveAnswer="saveAnswer" question=model}}
-  {{update-question question=model update="update"}}
+  <button class="btn btn-danger btn-sm" {{action 'delete' question}}>Delete this question</button>
+  <button class="btn btn-info btn-sm" {{action 'updateQuestionForm'}}>Update question</button>
 
-  <ul>
+  {{answer-tile answers=model.answers destroyAnswer="destroyAnswer"}}
+  {{new-answer saveAnswer="saveAnswer" question=model}}
+  {{update-question question=model update="update" destroyQuestion="destroyQuestion"}}
+
+
     {{#each model as |question|}}
-       <li>{{#link-to 'question' question.id}}{{question.ask}}{{question.author}}{{/link-to}}
-       </li>
+       <p>{{#link-to 'question' question.id}}{{question.ask}}{{question.author}}{{/link-to}}
+       </p>
     {{/each}}
-  </ul>
+
 </div>
