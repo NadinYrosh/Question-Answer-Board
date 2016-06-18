@@ -2,15 +2,20 @@
   <hr>
   <h2>Answers: </h2>
   <div class="row">
+    {{#each answers as |answer|}}
+    <button class="btn btn-xs btn-danger"{{action 'delete' answer}}>Delete</button>
 
-    {{#each sortedAnswers as |answer|}}
-    <div class="col-xs-4">
-      <h4>"{{answer.answer}}" -by {{answer.author}} </h4>
-    </div>
+      <div class="">
+        <p>
+          <h4>"{{answer.answer}}"</h4>
+          Author: {{answer.author}}
+          {{upvote-answer answer=answer upvote="upvote"}}
+        </p>
 
-    <div class="col-xs-8">
-      <button class="btn btn-xs btn-danger"{{action 'delete' answer}}>Delete</button>
-    </div>
+        <p>Vote:{{answer.votes}}</p>
+      </div>
+      <!-- <div class="">
+      </div> -->
     {{/each}}
 
   </div>
