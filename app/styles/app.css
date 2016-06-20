@@ -1,11 +1,11 @@
-/*.footer {
+.footer {
   position: fixed;;
   right: 0;
   bottom: 0;
   left: 0;
   background-color: #e3f2fd;
   text-align: center;
-}*/
+}
 
 .btn-success {
   margin: 10px;
@@ -18,5 +18,8 @@
 
 body {
   background-image: url("http://www.pptbackgroundstemplates.com/blog/wp-content/uploads/2014/05/Big-Question-Mark-Powerpoint-Design.jpg");
+}
 
+.container {
+  margin-bottom: 50px;
 }
