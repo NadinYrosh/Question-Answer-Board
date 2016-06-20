@@ -8,7 +8,7 @@
     {{#each model as |question|}}
       <li>
         <h4>
-          {{#link-to 'question' question.id}}{{question.ask}}{{/link-to}} written by {{question.author}}.
+          {{question-popularity question}} {{#link-to 'question' question.id}}{{question.ask}}{{/link-to}} written by {{question.author}}.
         </h4>
       </li>
     {{/each}}
