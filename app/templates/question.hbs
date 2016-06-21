@@ -1,9 +1,9 @@
 <div class="container">
-  {{question-tile question=model}}
+  {{question-tile question=model deleteQuestion="deleteQuestion"}}
+
+  {{update-question question=model update="update"}}
 
   {{answer-tile answers=model.answers upvote="upvote" destroyAnswer="destroyAnswer"}}
 
   {{new-answer saveAnswer="saveAnswer" question=model}}
-
-  {{update-question question=model update="update"}}
 </div>

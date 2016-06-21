@@ -3,7 +3,7 @@
 
   <h4>We hope you find exactly what you're looking for.</h4>
   <h2>Questions:</h2>
-
+  <h3>If you see <span class="glyphicon glyphicon-eye-open"></span> it means this question is really popular.</h3>
   <ul>
     {{#each model as |question|}}
       <li>
@@ -15,5 +15,11 @@
   </ul>
 
   {{new-question saveQuestion="saveQuestionOnQuestionRoute"}}
+
+  <div class="">
+    <h4>Your favorite questions:</h4>
+    {{display-cart }}
+
+  </div>
 
 </div>

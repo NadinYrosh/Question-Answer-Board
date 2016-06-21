@@ -28,5 +28,20 @@ export default Ember.Route.extend({
       answer.set('votes', answer.get('votes') + 1);
       answer.save();
     },
+
+
+
+    deleteQuestion(question) {
+      console.log("ass!!!");
+      if (confirm('Are you sure you want to delete this question?')) {
+        var answer_deletition = question.get('answers').map(function(answer) {
+          return answer.destroyRecord();
+        });
+       Ember.RSVP.all(answer_deletition).then(function() {
+         return question.destroyRecord();
+       });
+       this.transitionTo('index');
+      }
+    }
   }
 });
