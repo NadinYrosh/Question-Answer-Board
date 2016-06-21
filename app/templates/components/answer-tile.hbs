@@ -3,20 +3,11 @@
   <h2>Answers: </h2>
   <div class="row">
     {{#each answers as |answer|}}
-    <button class="btn btn-xs btn-danger"{{action 'delete' answer}}>Delete</button>
+      <h4>"{{answer.answer}}"</h4>
 
-      <div class="">
-        <p>
-          <h4>"{{answer.answer}}"</h4>
-          Author: {{answer.author}}
-          {{upvote-answer answer=answer upvote="upvote"}}
-        </p>
-
-        <p>Vote:{{answer.votes}}</p>
-      </div>
-      <!-- <div class="">
-      </div> -->
+      <button class="btn btn-xs btn-danger"{{action 'delete' answer}}>Delete</button>
+      <h4>Vote:{{answer.votes}}</h4>
+      {{upvote-answer answer=answer upvote="upvote"}}
     {{/each}}
-
   </div>
 </div>

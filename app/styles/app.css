@@ -13,13 +13,21 @@
 
 .jumbotron {
   background-color: #e3f2fd;
-
+  text-align: center;
 }
 
 body {
-  background-image: url("http://www.pptbackgroundstemplates.com/blog/wp-content/uploads/2014/05/Big-Question-Mark-Powerpoint-Design.jpg");
+  background-image: url("http://static.tumblr.com/94bee9a368dc93abfa16573ec738cbb6/rwfvryu/0A7o1lwz5/tumblr_static_egufvnmqftw04gc4c04c4g8sc.jpg");
 }
 
 .container {
   margin-bottom: 50px;
+}
+
+#update {
+  margin-top: 5px;
+}
+
+.btn-xs{
+  margin-bottom: 5px;
 }
